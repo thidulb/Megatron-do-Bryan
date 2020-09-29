@@ -1,0 +1,116 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  gravity 9.8
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.2351498217509879 0.9465055306438062 0.22097927909911785 4.6923740508516385
+  position -51.944812768699386 22.636807437800503 10.56023954154752
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 57 33
+  floorTileSize 57 33
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "pista.jpg"
+      ]
+      repeatS FALSE
+      repeatT FALSE
+      filtering 2
+    }
+    metalness 0
+    occlusionMapStrength 0
+  }
+}
+FireHydrant {
+  translation 21.47 0 0
+}
+TrashBin {
+}
+TrashBin {
+  translation 1.45 0 0
+  name "trash bin(1)"
+}
+TrashBin {
+  translation 2.88 0 0
+  name "trash bin(2)"
+}
+TrashBin {
+  translation 4.49 0 0
+  name "trash bin(3)"
+}
+StopSign {
+  translation -13.3012 7.10543e-15 6.56565
+  rotation 0 1 0 1.5708
+}
+StopSign {
+  translation -20.6616 5.32907e-15 -10.3948
+  rotation 0 1 0 1.5708
+  name "stop sign(1)"
+}
+DirectionalLight {
+  direction 13 -3 -10
+  intensity 2
+}
+CitroenCZero {
+  hidden position_0_0 1.0834539023379283e-08
+  hidden position2_0_0 -0.0012860763065410173
+  hidden position_0_1 1.103921485761131e-08
+  hidden position2_0_1 -0.0013369963498499216
+  hidden position_0_2 -0.00021331453006695204
+  hidden position_0_3 -0.00021589677390568962
+  hidden rotation_1 9.660873172495179e-06 -0.9999999999533338 -1.5453030254651518e-08 0.00521847234750888
+  hidden rotation_2 -9.54446408095077e-06 0.9999999999544517 -1.578366189580939e-08 0.005409676372897232
+  hidden rotation_3 0 -1 0 0.0007786868109698357
+  hidden rotation_4 0 0.9999999999999999 0 0.0007882459731126087
+  translation -14.3535 -0.00124343 12.9581
+  rotation -0.004366346372951811 0.9999747665846432 0.0056036785542693595 1.5707935643135524
+  controller "my_controller"
+  sensorsSlotFront [
+    Camera {
+      name "cameraFront"
+      fieldOfView 2
+      width 640
+      height 480
+    }
+  ]
+  sensorsSlotTop [
+    Display {
+      name "displayTop"
+      width 720
+      height 480
+    }
+    Camera {
+      translation 0 0 -0.5
+      name "cameraTop"
+      fieldOfView 1.5
+      width 720
+      height 480
+      motionBlur 1
+    }
+  ]
+}
+Tree {
+  translation 10 0 0
+}
+Tree {
+  translation 10 0 8
+  name "tree(1)"
+}
+Tree {
+  translation -3 0 8
+  name "tree(2)"
+}
+Tree {
+  translation 3 0 -9
+  name "tree(3)"
+}
+Tree {
+  translation 11 0 -6
+  name "tree(4)"
+}
